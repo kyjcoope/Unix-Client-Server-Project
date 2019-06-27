@@ -96,7 +96,7 @@ main(int ac, char *av[])
 	c[1] = '\0';
 	j=0;
 	p1 = fork();
-	if(p1>0){ //fork three times, one for client read and send to server(which also pipes that too thrind fork), second fork recieve from server and pipe that to thrid fork, thrid fork builds game
+	if(p1>0){ //fork three times, one for client read and send to server(which also pipes that too third fork), second fork recieve from server and pipe that to thrid fork, thrid fork builds game
 			while(1){ //get user input, send to client drawer, and server
 				c[0] = getch();
 				if(c[0]=='q'){
